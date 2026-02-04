@@ -1,73 +1,75 @@
 <style>
-    /* Reset total para evitar espaços entre as fatias */
-    #tabela_maragata_final {
-        border-collapse: collapse;
-        border-spacing: 0;
-        table-layout: fixed;
-        width: 1920px; /* Largura fixa para manter o encaixe perfeito */
+    /* Remove qualquer espaçamento padrão do navegador e do RD */
+    .lp-container-flex {
+        width: 100%;
+        max-width: 1920px;
         margin: 0 auto;
-        border: none;
-    }
-    #tabela_maragata_final td {
-        padding: 0;
-        margin: 0;
         line-height: 0;
         font-size: 0;
-        vertical-align: top;
+        display: flex;
+        flex-direction: column;
     }
-    #tabela_maragata_final img {
+    .lp-row {
+        display: flex;
+        width: 100%;
+    }
+    .lp-container-flex img {
         display: block;
         width: 100%;
         height: auto;
         border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    /* Ajuste fino para remover frestas de sub-pixel */
+    .lp-row div, .lp-row a {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
         outline: none;
     }
-    /* Remove margens extras do container do RD Station */
+    /* Reset do RD Station */
     .rd-section, .rd-column { padding: 0 !important; }
 </style>
 
-<table id="tabela_maragata_final" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-        <td colspan="7">
-            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/01.png" alt=""></td>
-    </tr>
-    <tr>
-        <td rowspan="6" width="454">
-            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/02.png" alt=""></td>
-        <td width="287">
-            <a href="https://www.maragata.com.br/bombacha-feminina-maragata" target="_blank">
-                <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/03.png" alt=""></a></td>
-        <td colspan="5" rowspan="2" width="1179">
-            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/04.png" alt=""></td>
-    </tr>
-    <tr>
-        <td rowspan="5">
-            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/05.png" alt=""></td>
-    </tr>
-    <tr>
-        <td colspan="3" rowspan="2" width="535">
-            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/06.png" alt=""></td>
-        <td width="241">
-            <a href="https://www.maragata.com.br/bombacha-feminina-maragata" target="_blank">
-                <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/07.png" alt=""></a></td>
-        <td rowspan="4" width="403">
-            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/08.png" alt=""></td>
-    </tr>
-    <tr>
-        <td rowspan="3">
-            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/09.png" alt=""></td>
-    </tr>
-    <tr>
-        <td rowspan="2" width="54">
-            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/10.png" alt=""></td>
-        <td width="328">
-            <a href="https://www.maragata.com.br/bombacha-feminina-maragata" target="_blank">
-                <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/11.png" alt=""></a></td>
-        <td rowspan="2" colspan="2" width="153">
-            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/12.png" alt=""></td>
-    </tr>
-    <tr>
-        <td>
-            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/13.png" alt=""></td>
-    </tr>
-</table>
+<div class="lp-container-flex">
+    <div class="lp-row">
+        <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/01.png">
+    </div>
+
+    <div class="lp-row">
+        <div style="width: 23.63%;">
+            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/02.png">
+        </div>
+        <div style="width: 76.37%; display: flex; flex-direction: column;">
+            <div style="display: flex;">
+                <a href="https://www.maragata.com.br/bombacha-feminina-maragata" target="_blank" style="width: 19.5%;">
+                    <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/03.png">
+                </a>
+                <div style="width: 80.5%;">
+                    <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/04.png">
+                </div>
+            </div>
+            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/05.png">
+            <div style="display: flex;">
+                <div style="width: 68.9%;">
+                     <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/06.png">
+                </div>
+                <a href="https://www.maragata.com.br/bombacha-feminina-maragata" target="_blank" style="width: 31.1%;">
+                    <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/07.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="lp-row"><img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/08.png"></div>
+    <div class="lp-row"><img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/09.png"></div>
+    <div class="lp-row"><img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/10.png"></div>
+    <div class="lp-row">
+        <a href="https://www.maragata.com.br/bombacha-feminina-maragata" target="_blank" style="width: 100%;">
+            <img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/11.png">
+        </a>
+    </div>
+    <div class="lp-row"><img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/12.png"></div>
+    <div class="lp-row"><img src="https://gubeeon.github.io/MARAGATA-LP_BombachaFeminina-final/images/13.png"></div>
+</div>
